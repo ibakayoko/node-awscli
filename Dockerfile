@@ -1,7 +1,7 @@
 FROM node:carbon-alpine
 
 RUN apk update && \
-    apk add curl unzip git jq && \
+    apk add python curl unzip git jq && \
     cd /tmp && \
     curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" && \
     unzip awscli-bundle.zip && \
